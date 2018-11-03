@@ -33,8 +33,8 @@ class AudioTest{
       try AVAudioSession.sharedInstance().setActive(true)
     
       print("This is MP3")
-      //player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
-      player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileTypeMPEGLayer3)
+      player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+      //player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileTypeMPEGLayer3)
       
       print("Checking player status")
       guard let player = player else { return }
